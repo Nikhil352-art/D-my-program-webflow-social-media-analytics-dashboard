@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">MyDashboard</div>
+            <div class="header-right">
+                <div class="notifications">
+                    <span class="icon">🔔</span>
+                </div>
+                <div class="profile">
+                    <img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic">
+                </div>
+                <div class="settings">
+                    <selectname="settings" id="settings">
+                        <option value="profile">Profile</option>
+                        <option value="account">Account</option>
+                        <option value="logout">Logout</option>
+                    </select>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#" class="active">Overview</a></li>
+                <li><a href="#">Instagram Analytics</a></li>
+                <li><a href="#">Facebook Analytics</a></li>
+                <li><a href="#">Twitter Analytics</a></li>
+                <li><a href="#">Ads Insights</a></li>
+                <li><a href="#">Promotions</a></li>
+                <li><a href="#">Stories</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Main Dashboard Area -->
+        <main class="main-content">
+            <section class="overview">
+                <h2>Overview</h2>
+                <div class="metrics">
+                    <div class="metric">
+                        <h3>Total Followers</h3>
+                        <p>15,432</p>
+                    </div>
+                    <div class="metric">
+                        <h3>Engagement</h3>
+                        <p>7.8%</p>
+                    </div>
+                    <div class="metric">
+                        <h3>Recent Posts</h3>
+                        <p>23</p>
+                    </div>
+                </div>
+            </section>
+            <section class="realtime-stats">
+                <h2>Real-time Stats</h2>
+                <div id="stats">
+                    <p>Account Reach: 1,200</p>
+                    <p>Engagement Rate: 6.5%</p>
+                    <p>Clicks: 340</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

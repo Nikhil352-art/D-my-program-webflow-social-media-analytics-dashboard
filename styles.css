@@ -1,0 +1,145 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right .notifications {
+    margin-right: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.header-right .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.header-right .settings select {
+    padding: 5px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    background: #2c3e50;
+    color: #fff;
+    height: 100%;
+    padding-top: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.sidebar ul li a.active,
+.sidebar ul li a:hover {
+    background: #34495e;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+    padding-top: 80px;
+    width: calc(100% - 200px);
+    overflow-y: auto;
+}
+
+.overview, .realtime-stats {
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metrics {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.metric {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    background: #f7f9fc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.metric h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.metric p {
+    font-size: 16px;
+    font-weight: bold;
+}
